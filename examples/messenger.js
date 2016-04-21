@@ -25,18 +25,20 @@ const Wit = require('../').Wit;
 const PORT = process.env.PORT || 8445;
 
 // Wit.ai parameters
-const WIT_TOKEN = process.env.WIT_TOKEN;
+const WIT_TOKEN = 'N77QEAAGTQIMGXYBLU53GBXF6PTEGM4B';
+
 
 // Messenger API parameters
-const FB_PAGE_ID = process.env.FB_PAGE_ID && Number(process.env.FB_PAGE_ID);
+const FB_PAGE_ID = '239206492868633';
 if (!FB_PAGE_ID) {
   throw new Error('missing FB_PAGE_ID');
 }
-const FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN;
+const FB_PAGE_TOKEN = 'CAAHvyqgTUiUBAIhYNHyjpvcXqrrWBS6QdUuE9BLvqoSItcMOX3sefl6b1oEKhM9F0YT0ht4EM5VyStYgq6coLOA6sv8ZA51WYanQV4R3zZAqTc5nAbKMSnxHXg0QjW5ZCZATq1AAzWkQtivgUhr3K5ybptc5mZBPsUqNNJDUHq4bdfCinUzFQwRDnNgkQIlnmyxffmZCVMdQZDZD';
 if (!FB_PAGE_TOKEN) {
   throw new Error('missing FB_PAGE_TOKEN');
 }
-const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN;
+const FB_VERIFY_TOKEN = 'my_voice_is_my_password_verify_me';
+
 
 // Messenger API specific code
 
